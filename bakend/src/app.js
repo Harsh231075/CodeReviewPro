@@ -6,7 +6,7 @@ const app = express();
 
 
 app.use(cors({
-  origin: 'https://code-review-pro.vercel.app/',  // ✅ Frontend ka exact origin
+  origin: 'https://code-review-pro.vercel.app',  // ✅ Frontend ka exact origin
   methods: ['GET', 'POST'],
   allowedHeaders: ['Content-Type']
 }));
