@@ -24,7 +24,7 @@ function App() {
 
     try {
       console.log(code);
-      const response = await axios.post('http://localhost:3000/ai/get-review', { code });
+      const response = await axios.post('https://codereviewpro-1.onrender.com/ai/get-review', { code });
       console.log(response);
 
       if (response.data) {
