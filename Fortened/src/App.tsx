@@ -25,8 +25,11 @@ function App() {
     try {
       console.log(code);
     const response = await axios.post('https://codereviewpro-1.onrender.com/ai/get-review', 
-  { code } 
- 
+  { code } ,
+  {
+          headers: { 'Content-Type': 'application/json' },
+          timeout: 5000, // Set a timeout of 5 seconds
+        }
 );
 
       console.log(response);
